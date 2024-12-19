@@ -125,7 +125,10 @@ jobs:
                 jf rt build-publish
 
             - name: build scan
-              run: |            
+              run: |
+                echo "sleeping for 45 seconds"
+                sleep 45
+                echo "waking up."
                 jf build-scan
                 
             - name: Write to workflow job summary
