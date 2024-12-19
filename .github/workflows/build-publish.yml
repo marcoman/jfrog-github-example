@@ -13,7 +13,7 @@ jobs:
         #runs-on: ubuntu-latest
         runs-on: ubuntu-24.04
         env:
-          DOCKER_REPO: 'codeninjas-proj-docker-local'
+          DOCKER_REPO: 'marco-dev-docker'
           IMAGE_NAME: 'my-very-cool-image:${{ github.run_number }}'
           JF_URL: https://${{ vars.JF_URL }}/
           DOCKER_CLI_EXPERIMENTAL: enabled
