@@ -3,6 +3,13 @@ on:
     push:
         branches:
          main
+    workflow_dispatch:
+        inputs:
+            description:
+                description: 'Manual Run'
+                required: true
+                type: string
+      
 permissions:
   actions: read # for detecting the Github Actions environment.
   id-token: write # for creating OIDC tokens for signing.
